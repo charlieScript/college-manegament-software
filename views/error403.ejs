@@ -1,0 +1,58 @@
+<%- include('includes/head') -%> 
+<style>
+body {
+    font-family: Trocchi;
+    font-size: 50px;
+    color: steelblue;
+    text-align: center;
+  }
+  
+  #container {
+    margin: 100px;
+    display: align-self;
+    flex-flow: row wrap;  
+    align-items: center;
+  }
+  
+  
+  #middle {
+    margin-top: -90px;
+    font-size: 250px;
+    font-weight: bold;
+  }
+  
+  #bottom {
+    font-size: 30px;
+  }
+
+  #errormsg {
+    font-size: small;
+    display: block;
+  }
+</style>
+<div id="navbar-wrapper" style="position: fixed;">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand"><b>CMS NSIT</b></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Error Page -->
+    <div class="pt-5">
+        <div class="pt-5" id="top">Oops!</div>
+        <div id="middle">403</div>
+        <div id="bottom">Sorry, you are not authorized!</div>
+        
+        <label id="errormsg" class="pt-2">
+            <%- include('./Includes/messages') %>
+        </label>
+        <button class="btn btn-primary btn-lg" onclick="location.href = '/'">
+            <a style="color: white;">Home</a>
+        </button>
+
+    </div>
+
+<%- include('includes/footer') -%> 

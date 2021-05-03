@@ -1,9 +1,9 @@
 use cms;
 
-DROP TABLE student;
+DROP TABLE admin;
 
 CREATE TABLE IF NOT EXISTS admin (
-  admin_id VARCHAR(36) PRIMARY KEY,
+  admin_id INT AUTO_INCREMENT PRIMARY KEY,
   first_name VARCHAR(255) NOT NULL,
   last_name VARCHAR(255) NOT NULL,
   email VARCHAR(255) UNIQUE NOT NULL,
@@ -59,3 +59,13 @@ CREATE TABLE IF NOT EXISTS staff (
   FOREIGN KEY(faculty_id) REFERENCES faculty(faculty_id) ON DELETE SET NULL
 );
 
+INSERT INTO admin (first_name, last_name, email, password)
+VALUES (
+    'charles',
+    'onedibe',
+    'gozione3@gmail.com',
+    '$2a$10$kFyPx01E3NCDAdKKfTbgYeEoKKkgz3sT9UmTgxZ1xBXCxU/6XDOKy'
+  );
+
+
+SELECT email, password FROM admin WHERE email = 'gozione3gmail.com';

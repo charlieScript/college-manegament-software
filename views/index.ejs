@@ -1,0 +1,38 @@
+<%- include('includes/head') -%> 
+
+<section id="content-wrapper">
+        <main role="main" class="pt-0 main">
+            <div class="header text-center pt-5 pt-lg-4">
+                <h1>WELCOME TO CHARLIESCRIPT'S<span style="color: orangered;"> CMS </span></h1>
+            </div>
+
+            <hr>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 m-auto">
+                        <div class="card card-body"
+                            style="box-shadow: 0 1rem 2rem 0 rgba(136, 152, 170, .15) !important;">
+                            <h1 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i> LOGIN</h1>
+                            <!-- Login buttons for homepage -->
+                            <button class="btn btn-primary btn-block" onclick="location.href = '/admin/login'">
+                                <a style="color: white;">ADMIN LOGIN</a>
+                            </button>
+                            <br>
+                            <button class="btn btn-primary btn-block" onclick="location.href = '/staff/login'">
+                                <a style="color: white;">STAFF LOGIN</a>
+                            </button>
+                            <br>
+                            <button class="btn btn-primary btn-block" onclick="location.href = '/student/login'">
+                                <a style="color: white;">STUDENT LOGIN</a>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </section>
+
+<% include('includes/footer') %> 

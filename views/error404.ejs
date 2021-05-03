@@ -1,0 +1,53 @@
+<%- include('includes/head') -%> 
+<style>
+body {
+    font-family: Trocchi;
+    font-size: 50px;
+    color: steelblue;
+    text-align: center;
+  }
+  
+  #container {
+    margin: 100px;
+    display: align-self;
+    flex-flow: row wrap;  
+    align-items: center;
+  }
+  
+  
+  #middle {
+    margin-top: -90px;
+    font-size: 250px;
+    font-weight: bold;
+  }
+  
+  #bottom {
+    font-size: 30px;
+  }
+
+  #errormsg {
+    font-size: small;
+    display: block;
+  }
+</style>
+<div id="navbar-wrapper" style="position: fixed;">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand"><b>CMS </b></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+<div class="pt-5">
+        <div class="pt-5" id="top">Oops!</div>
+        <div id="middle">404</div>
+        <div id="bottom">Sorry, couldn't find what you're looking for!</div>
+
+        <button class="btn btn-primary btn-lg" onclick="location.href = '/'">
+            <a style="color: white;">Home</a>
+        </button>
+
+    </div>
+
+<%- include('includes/footer') -%> 
